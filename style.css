@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: "Caveat", cursive;
+}
+
+.wrapper {
+    background-color: aquamarine;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper {
+    background-color: white;
+    padding: 70px 0px;
+    width: 40%;
+
+    position: relative;
+
+    -webkit-box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.22);
+}
+
+.paper > div {
+    height: 5%;
+    border: 1px solid rgba(87, 87, 87, 0.201);
+    padding-left: 60px;
+
+    position: relative;
+}
+
+h1 {
+    line-height: 0;
+}
+
+h1::before {
+    content: "✓";
+}
+
+img {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    height: 80%;
+}
+
+.hole {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+
+    transform: translateY(50%);
+
+    -webkit-box-shadow: inset 1px 3px 4px 2px rgba(0, 0, 0, 0.22);
+    box-shadow: inset 1px 3px 4px 2px rgba(0, 0, 0, 0.22);
+}
